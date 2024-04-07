@@ -29,6 +29,7 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  margin: 0;
 }
 
 .main {
