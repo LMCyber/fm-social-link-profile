@@ -1,2 +1,80 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter') url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
 :root {
+  --primaryFont: 'Inter', sans-serif;
+
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --darkGrey: hsl(0, 0%, 12%);
+  --offBlack: hsl(0, 0%, 8%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primaryFont);
+  background-color: var(--offBlack);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.main {
+  background-color: var(--darkGrey);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 328px;
+  height: 581px;
+  border-radius: 12px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: var(--White);
+  font-size: 24px;
+  margin: 0 0 -6px 0;
+}
+
+.nationality {
+  color: var(--Green);
+  font-size: 13.8px;
+  margin: 10px;
+}
+
+.content {
+  color: var(--White);
+  font-size: 14.2px;
+  margin: 0 0 8px 0;
+}
+
+.social__btn {
+  width: 279px;
+  height: 45px;
+  background-color: var(--Grey);
+  color: var(--White);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
 }
