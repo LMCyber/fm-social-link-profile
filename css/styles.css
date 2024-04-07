@@ -44,8 +44,8 @@ body {
 }
 
 .avatar {
-  width: 90px;
-  height: 90px;
+  width: 95px;
+  height: 95px;
   border-radius: 100%;
   margin-bottom: 10px;
 }
@@ -53,18 +53,18 @@ body {
 .name {
   color: var(--White);
   font-size: 24px;
-  margin: 0 0 -6px 0;
+  margin: 0 0 -16px 0;
 }
 
 .nationality {
   color: var(--Green);
-  font-size: 13.8px;
+  font-size: 14px;
   margin: 10px;
 }
 
 .content {
   color: var(--White);
-  font-size: 14.2px;
+  font-size: 14px;
   margin: 0 0 8px 0;
 }
 
@@ -77,4 +77,31 @@ body {
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.social__btn:hover {
+  background-color: var(--Green);
+  color: var(--offBlack);
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  .main {
+    width: 384px;
+    height: 613px;
+    padding: 40px;
+  }
+
+  .avatar {
+    margin: 0 0 12px 0;
+  }
+
+  .name {
+    margin: 0 0 -18px 0;
+  }
+
+  .social__btn {
+    width: 304px;
+    height: 45px;
+  }
 }
