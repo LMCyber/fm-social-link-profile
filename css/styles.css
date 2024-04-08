@@ -55,6 +55,7 @@ body {
   color: var(--White);
   font-size: 24px;
   margin: 0 0 -16px 0;
+  font-weight: 700;
 }
 
 .nationality {
@@ -94,7 +95,7 @@ body {
   }
 
   .avatar {
-    margin: 0 0 2px 0;
+    margin: 0 0 3px 0;
   }
 
   .name {
